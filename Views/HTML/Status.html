@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>User Status</title>
+   <link rel="stylesheet" href="Status.css">
+</head>
+<body>
+   <header>
+       <script src="Status.js"></script>
+         <nav>
+             <img class="logo" src = "logo.png", alt="LOGO">
+            <ul>
+               <li><a href="homePage2.html">Home</a></li>
+               <li><a href="NutritionistAdvice.html">Services</a></li>
+               <li><a href="contactUs.html">Contact</a></li>
+               <li><a href="Workout.html">Workout</a></li>
+                <li><a href="Nutrioin.html">Nutrioin</a></li>
+            </ul>
+         </nav>
+      </header>
+   <div class="container">
+       <h1>User Status</h1>
+       <div class="status-container">
+
+           <div class="workouts">
+               <h2>Trainings</h2>
+               <p>You have completed <span id="workout-count">0</span> Training this week</p>
+              <a href="Workout.html"><button id="add-workout">View</button></a>
+           </div>
+
+            <div class="nutrition">
+               <h2>Nutrition</h2>
+               <p>You have eat <span id="eat-count">0</span> healthy meals</p>
+                  <a href="Nutrioin.html"><button id="add-meal">View</button></a>
+           </div>
+
+             <div class="status">
+              <h2>Status</h2>
+              <p>Check your status? Update the details?</p>
+              <a href="Workout.html"><button id="View-status">View</button></a>
+              <a href="nextStep.html"><button id="Update-status">Update</button></a>
+            </div>
+
+           <div class="water-cups">
+               <h2>Water Cups</h2>
+               <p>You have consumed <span id="water-count">0</span> cups today</p>
+               <button id="add-water" onclick="incrementWater()">Add</button>
+               <button id="remove-water" onclick="decrementWater()">Remove</button>
+           </div>
+       </div>
+
+       </div>
+          <img src="flex-muscle-icon-18.jpg" alt="">
+          <script src="app.js"></script>
+
+   </div>
+   </body>
+
+</html>
+

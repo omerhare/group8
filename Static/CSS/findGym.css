@@ -1,0 +1,116 @@
+body {
+	font-family: Arial, sans-serif;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	position: relative;
+	background-color: #333;
+	color: #4D4DAE;
+	padding: 20px;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.intro {
+    display: marker;
+	flex-direction: column;
+	margin-top: 0px;
+    background-color: steelblue;
+    color: whitesmoke;
+    text-align: center;
+	padding: 20px;
+}
+
+.search-container {
+	background-color: lightslategrey;
+	height: 100%;
+	width: fit-content;
+	position: fixed;
+	padding-top: 15px;
+}
+.search-container {
+	float: left;
+	display: marker;
+	width: fit-content;
+	height: 100%;
+	background-color: grey;
+}
+
+.location-form input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+margin-left: 10px;
+  font-size: 17px;
+  border: none;
+}
+
+.search-container button {
+  float: right;
+	padding: 6px;
+  margin-top: 8px;
+  margin-right: 17px;
+  background: steelblue;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+	border-radius: 5px;
+}
+
+.location-form .search-container button:hover {
+  background: #ccc;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Explore, .View-profile {
+    background-color: steelblue;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.Explore h2, .View-profile h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.Explore p, .View-profile p {
+    font-size: 18px;
+	text-align: center;
+    margin-bottom: 20px;
+    color: lightgrey;
+}
+
+.Explore button, .View-profile button {
+    background-color: whitesmoke;
+	width: fit-content;
+    color: gray;
+	text-align: center;
+    border: none;
+    cursor: pointer;
+    padding: 10px 10px
+}

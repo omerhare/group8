@@ -1,0 +1,241 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #f2f2f2;
+}
+
+.logo {
+	  width: 40px;
+	  height: 40px;
+	  float: left;
+  }
+header {
+   background-color: #333;
+   color: #4D4DAE;
+   padding: 30px;
+}
+
+nav ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   display: flex;
+   justify-content: flex-end;
+}
+
+nav li {
+   margin-right: 20px;
+}
+
+nav a {
+   color: #fff;
+   text-decoration: none;
+}
+
+.container {
+   display: flex;
+   margin: 50px auto;
+   max-width: 800px;
+   text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1 {
+   font-size: 38px;
+   font-weight: bold;
+   color: #1c2237;
+   margin-bottom: 30px;
+       align-items: center;
+}
+
+ .container h1 img{
+   width: 50px;
+    height:50px;
+ }
+
+.container p1{
+   font-size: 20px;
+   font-weight: bold;
+   color: #1c2237;
+   padding: 20px;
+}
+
+.Nutrition-container {
+   align-items: center;
+   flex-wrap: wrap;
+   margin-bottom: 0px;
+   padding-bottom: 0px;
+}
+
+.Nutrition {
+   display: grid;
+   grid-template-columns: 120px 100px 120px  ;
+   grid-template-rows: 120px 60px ;
+   justify-content: space-evenly;
+   column-gap: 15px;
+   row-gap: 20px;
+   background-color:  #000080;
+   box-shadow: 0px 0px 10px #ccc;
+   margin: 20px auto;
+   padding: 30px;
+   width: 420px;
+   height: 200px;
+   border-radius: 10px;
+   grid-template-areas:"head head imgae"
+				        "par par add";
+}
+
+.Today-Focus {
+   display: grid;
+   grid-template-columns: 150px 50px 80px ;
+   grid-template-rows: 20px 60px 50px;
+   justify-content: space-evenly;
+   column-gap: 15px;
+   row-gap: 20px;
+   background-color:  #000080;
+   box-shadow: 0px 0px 10px #ccc;
+   padding: 30px;
+   width: 420px;
+   height: 180px;
+   border-radius: 10px;
+   grid-template-areas:"head head imgae"
+				        "add pase imgae"
+				        "par par par";
+     margin-bottom: 20px;
+}
+
+
+.container img {
+   width: 200px;
+   height:180px;
+   border-radius: 10%;
+}
+
+.Nutrition img  {
+    width: 100%;
+    height:100%;
+   border-radius: 10%;
+   grid-area: imgae;
+
+}
+
+.Today-Focus img {
+    width: 100px;
+    height:100px;
+   border-radius: 10%;
+   grid-area: imgae;
+
+}
+
+.dish-container img {
+   width: 200px;
+   height:180px;
+   border-radius: 10%;
+   margin-top: 20px;
+}
+
+
+.Nutrition h2, .Today-Focus h2 {
+   font-size: 20px;
+   font-weight: bold;
+   color: white;
+   grid-area: head;
+}
+
+ .Today-Focus p {
+   font-size: 18px;
+   margin-bottom: 20px;
+   margin-left: -25px;
+   color: lightgrey;
+   grid-area: par;
+}
+
+ .Nutrition p{
+   font-size: 18px;
+   color: lightgrey;
+   grid-area: par;
+
+}
+.Close button {
+    background-color: whitesmoke;
+   color: gray;
+   font-weight: bold;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+   height:40%;
+   border-radius: 10px;
+     text-align: center;
+   grid-area: pase;
+
+}
+ .Today-Focus button{
+   background-color: whitesmoke;
+   color: gray;
+   font-weight: bold;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+   height:40%;
+   border-radius: 10px;
+     text-align: center;
+   grid-area: add;
+}
+
+.Nutrition button{
+   background-color: whitesmoke;
+   color: gray;
+   font-weight: bold;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+   height:40%;
+   border-radius: 10px;
+     text-align: center;
+   grid-area: add;
+}
+
+.Today-Focus button:hover, .Nutrition button:hover , .Close button:hover {
+  background-color: #0077c2;
+   color: #fff;
+}
+
+footer {
+   background-color: #333;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+}
+.container h1 {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.Nutrition {
+  animation: slide-up 1s ease-out forwards;
+}
+
+.Today-Focus {
+  animation: slide-up 1s ease-out 0.2s forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hidden {
+   display: none;
+}

@@ -1,0 +1,114 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #4D4DAE;
+	padding: 30px;
+}
+
+
+nav ul {
+	margin: 0;
+	padding: 0px;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+.logo {
+	  width: 40px;
+	  height: 40px;
+	  float: left;
+  }
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.login-form {
+	background-color: #000080;
+	padding: 20px;
+	text-align: center;
+	color: #fff;
+}
+
+.login-form h1 {
+	font-size: 3em;
+	margin: 0;
+}
+
+.login-form form {
+	display: marker;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+.login-form input {
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+.login-form button {
+	padding: 10px;
+	background-color: #fff;
+	color: #0077c2;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+.login-form button a {
+	color: #0077c2;
+}
+
+.login-form button:hover {
+	background-color: #0077c2;
+	color: #fff;
+}
+.login-form button:hover a{
+	background-color: #0077c2;
+	color: #fff;
+}
+
+.login-form p {
+	margin-top: 20px;
+}
+
+.login-form a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.login-form h1 {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.login-form form {
+  animation: slide-up 1s ease-out forwards;
+}
+
+.login-form p {
+  animation: slide-up 1s ease-out 0.2s forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+

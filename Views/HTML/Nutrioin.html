@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>My Nutrition</title>
+   <link rel="stylesheet" href="Nutrioin.css">
+</head>
+<body>
+   <header>
+          <script src="Nutrion.js"></script>
+         <nav>
+             <img class="logo" src = "logo.png", alt="LOGO">
+            <ul>
+                 <li><a href="homePage2.html">Home</a></li>
+               <li><a href="contactUs.html">Contact</a></li>
+                <li><a href="Status.html">Status</a></li>
+               <li><a href="Workout.html">Workout</a></li>
+                <li><a href="NutritionistAdvice.html">Services</a></li>
+            </ul>
+         </nav>
+      </header>
+   <div class="container">
+       <h1><img src="dish.png" alt=""> My Nutrition plan <img src="dish.png" alt=""> </h1>
+       <div class="Nutrition-container">
+           <div class="Nutrition">
+             <img src="fitness-icon.png" alt="">
+               <h2>We Recommend to include these in your diet</h2>
+                 <button onclick="getRecommendation()">Recommend</button>
+                    <p id="recommendation"></p>
+           </div>
+           <div class="Today-Focus">
+               <h2>Today Focus</h2>
+                <img src="dinner.png" alt="">
+                <button onclick="generateMealPlan()">Meal Planner</button>
+               <div id="Close" class="hidden">
+                   <button onclick="toggleMealPlanner()">Close</button>
+               </div>
+               <p id="recommend-meal"></p>
+           </div>
+       </div>
+
+   </div>
+   <script src="app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>My Workout</title>
+   <link rel="stylesheet" href="Workout.css">
+</head>
+<body>
+   <header>
+       <script src="Workout.js"></script>
+         <nav>
+             <img class="logo" src="logo.png" alt="LOGO">
+            <ul>
+              <li><a href="homePage2.html">Home</a></li>
+               <li><a href="NutritionistAdvice.html">Services</a></li>
+               <li><a href="contactUs.html">Contact</a></li>
+               <li><a href="Status.html">Status</a></li>
+                <li><a href="Nutrioin.html">Nutrioin</a></li>
+            </ul>
+         </nav>
+      </header>
+   <div class="container">
+       <h1>My Workout</h1>
+        <p1>By analyzing your data this is what we suggest </p1>
+       <div class="Cardio-container">
+           <div class="Cardio-Training">
+               <h2>Cardio</h2>
+             <img src="Cardio%20Heart.jpg" alt="">
+               <p>You have completed <tspan id="training-type-count">0 </tspan> Cardio Training</p>
+               <button id="add-training" onclick="incrementTraining()">Add Train</button>
+                 <div class="Changes1">
+               <button id="add-lessT" onclick="decrementTraining()">Less</button>
+           </div>
+           </div>
+           <div class="Strength-Training">
+               <h2>Strength Training</h2>
+               <img src="running-shoes.png" alt="">
+               <p>You have completed <tspan id="workout-count">0 </tspan> Strength Training</p>
+               <button id="add-workout" onclick="incrementWorkout()">Add Workout</button>
+                <div class="Changes2">
+                 <button id="add-lessW" onclick="decrementWorkout()">Less</button>
+           </div>
+           </div>
+
+
+             <div class="Recommended-Training">
+               <h2>Recommended Training</h2>
+               <p>The Recommended Training is <span id="Recommended-workouts"></span> </p>
+               <button id="Change-workout" onclick="generateRecommendedTraining()">Change</button>
+           </div>
+
+
+       </div>
+                  <img src="flex-muscle-icon-18.jpg" alt="">
+   </div>
+   <script src="app.js"></script>
+
+</body>
+</html>

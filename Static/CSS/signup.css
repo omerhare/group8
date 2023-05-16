@@ -1,0 +1,125 @@
+body {
+	font-family: Arial, sans-serif;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	position: relative;
+	background-color: #333;
+	color: #4D4DAE;
+	padding: 20px;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.logo {
+	  width: 40px;
+	  height: 40px;
+	  float: left;
+  }
+
+.signup-form {
+	background-color: #000080;
+	padding: 20px;
+	text-align: center;
+	color: #fff;
+}
+
+.signup-form form {
+	display: marker;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+.details input {
+  	width: 50%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.details input:focus {
+	background-color: lightgrey;
+}
+
+.details select{
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid grey;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.select-selected{
+	background-color: navy;
+	color: white;
+
+}
+
+.details label {
+	display: inline-block;
+	width: 100px;
+	font-size: medium;
+	margin: 30px;
+	text-align: left;
+}
+
+.details button {
+	width: 20%;
+  	background-color: darkgray;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 12px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.details button:hover {
+  background-color: #45a049;
+}
+
+section p{
+	margin-left: 10px;
+}
+
+.signup-form h1 {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.details form {
+  animation: slide-up 1s ease-out forwards;
+}
+
+.details p {
+  animation: slide-up 1s ease-out 0.2s forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
